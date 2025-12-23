@@ -52,7 +52,7 @@ Prettier – consistent code formatting
 
 W3C Markup Validator – HTML & CSS validation
 
-c
+
 
 ## Deployment
 
