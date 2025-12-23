@@ -1,14 +1,58 @@
 # Simple Todo App
+This project is a dynamic Todo List application that allows users to create, view, and manage tasks with due dates. Users can add new todos through a popup form, which includes real-time form validation. Each task is assigned a unique ID and displayed instantly in the list.
 
-Give a brief description of the project here. Feel free to give it a different name.
+The project is built using JavaScript classes and modules, following Object-Oriented Programming (OOP) principles to keep the code organized, reusable, and easy to maintain.
+
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+Open and close popup modal for adding todos
+
+Add new todos with a name and due date
+
+Automatically generate unique IDs for each todo
+
+Display initial predefined todos on page load
+
+Validate form inputs in real time
+
+Disable submit button when form is invalid
+
+Reset form and validation after successful submission
+
+Close popup only after successful form submission
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+HTML5 – semantic markup
+
+CSS3 – layout and styling
+
+JavaScript (ES6):
+
+Classes & inheritance
+
+Modules (import / export)
+
+Event listeners
+
+DOM manipulation
+
+UUID library – for generating unique todo IDs
+
+Form validation logic using a reusable FormValidator class
+
+OOP principles (encapsulation, abstraction)
+
+Git & GitHub – version control
+
+GitHub Pages – project deployment
+
+Prettier – consistent code formatting
+
+W3C Markup Validator – HTML & CSS validation
+
+c
 
 ## Deployment
 

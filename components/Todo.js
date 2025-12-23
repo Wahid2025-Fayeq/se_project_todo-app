@@ -5,21 +5,22 @@ class Todo {
   }
 
   _setEventListeners() {
-    this._todoCheckboxEl.addEventListener("change", () => {
+    this._todoCheckboxElement.addEventListener("change", () => {
       this._data.completed = !this._data.completed;
     });
 
-    this._todoDeleteBtn.addEventListener("click", () => {
+    this._todoDeleteButton.addEventListener("click", () => {
       this._todoElement.remove();
     });
   }
 
-  _generateCheckBoxEl() {
-    this._todoCheckboxEl = this._todoElement.querySelector(".todo__completed");
+  _generateCheckBoxElement() {
+    this._todoCheckboxElement =
+      this._todoElement.querySelector(".todo__completed");
     this._todoLabel = this._todoElement.querySelector(".todo__label");
 
-    this._todoCheckboxEl.checked = this._data.completed;
-    this._todoCheckboxEl.id = `todo-${this._data.id}`;
+    this._todoCheckboxElement.checked = this._data.completed;
+    this._todoCheckboxElement.id = `todo-${this._data.id}`;
     this._todoLabel.setAttribute("for", `todo-${this._data.id}`);
   }
 
@@ -28,22 +29,23 @@ class Todo {
       .querySelector(".todo")
       .cloneNode(true);
 
-    const todoNameEl = this._todoElement.querySelector(".todo__name");
-    const todoDateEl = this._todoElement.querySelector(".todo__date");
-    this._todoDeleteBtn = this._todoElement.querySelector(".todo__delete-btn");
+    const todoNameElement = this._todoElement.querySelector(".todo__name");
+    const todoDateElement = this._todoElement.querySelector(".todo__date");
+    this._todoDeleteButton =
+      this._todoElement.querySelector(".todo__delete-btn");
 
-    todoNameEl.textContent = this._data.name;
+    todoNameElement.textContent = this._data.name;
 
     const dueDate = new Date(this._data.date);
     if (!isNaN(dueDate)) {
-      todoDateEl.textContent = `Due: ${dueDate.toLocaleString("en-US", {
+      todoDateElement.textContent = `Due: ${dueDate.toLocaleString("en-US", {
         year: "numeric",
         month: "short",
         day: "numeric",
       })}`;
     }
 
-    this._generateCheckBoxEl();
+    this._generateCheckBoxElement();
     this._setEventListeners();
 
     return this._todoElement;
