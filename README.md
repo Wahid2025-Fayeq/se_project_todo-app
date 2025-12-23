@@ -58,4 +58,5 @@ c
 
 This project is deployed on GitHub Pages:
 
- LINK: https://wahid2025-fayeq.github.io/se_project_todo-app/
+ LINK:
+(https://wahid2025-fayeq.github.io/se_project_todo-app/)
