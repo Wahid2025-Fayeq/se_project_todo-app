@@ -13,7 +13,7 @@ class FormValidator {
       `#${inputElement.id}-error`
     );
     this._errorElement.textContent = errorMessage;
-    errorElement.classList.add(this._errorClass);
+    this._errorElement.classList.add(this._errorClass);
     inputElement.classList.add(this._inputErrorClass);
   }
 
