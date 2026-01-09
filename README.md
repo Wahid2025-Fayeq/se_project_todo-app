@@ -52,10 +52,11 @@ Prettier – consistent code formatting
 
 W3C Markup Validator – HTML & CSS validation
 
-c
+
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
- LINK: https://wahid2025-fayeq.github.io/se_project_todo-app/
+ LINK:
+(https://wahid2025-fayeq.github.io/se_project_todo-app/)
