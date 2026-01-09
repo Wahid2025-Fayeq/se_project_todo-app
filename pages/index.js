@@ -23,15 +23,13 @@ const generateTodo = (data) =>
     },
   }).getView();
 
-const section = new Section(
-  {
-    items: initialTodos,
-    renderer: (item) => {
-      section.addItem(generateTodo(item));
-    },
+const section = new Section({
+  items: initialTodos,
+  renderer: (item) => {
+    section.addItem(generateTodo(item));
   },
-  ".todos__list"
-);
+  containerSelector: ".todos__list",
+});
 
 section.renderItems();
 

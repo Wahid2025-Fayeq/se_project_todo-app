@@ -69,7 +69,9 @@
   color: #f44;
   cursor: pointer;
 }
-
+.todo__delete-btn:hover {
+  opacity: 0.7;
+}
 .todo__delete-btn::before {
   content: "Delete";
 }

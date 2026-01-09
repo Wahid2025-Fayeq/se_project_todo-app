@@ -19,14 +19,25 @@ class PopupWithForm extends Popup {
   setEventListeners() {
     super.setEventListeners();
 
+    this._form.addEventListener("keydown", (evt) => {
+      if (evt.key === "Enter" && !this._form.checkValidity()) {
+        evt.preventDefault();
+      }
+    });
+
     this._form.addEventListener("submit", (evt) => {
       evt.preventDefault();
+
+      if (!this._form.checkValidity()) {
+        this._inputList.forEach((input) => input.reportValidity());
+        return;
+      }
+
       this._handleFormSubmit(this._getInputValues());
     });
   }
   close() {
     super.close();
-    this._form.reset();
   }
 }
 export default PopupWithForm;
